@@ -17,7 +17,17 @@
   width: 100%;
   height: 100%;
   background-color: inherit;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+.user-nav__burger-button {
+  background-position: center 3px;
+  background-repeat: no-repeat;
+}
+
+.user-nav__burger-button--close {
+  background-image: url("../../img/icons/menu.svg");
+}
+
+.user-nav__burger-button--open {
+  background-image: url('../../img/icons/menu-close.svg');
 }
