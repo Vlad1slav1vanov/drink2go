@@ -1,4 +1,8 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
+.page {
+  width: 100%;
+  height: 100%;
+}
 .page__body {
   font-family: "Montserrat", sans-serif;
   min-height: 100%;
