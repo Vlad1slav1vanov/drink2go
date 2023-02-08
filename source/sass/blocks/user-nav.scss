@@ -1,27 +1,33 @@
 .user-nav {
   width: 180px;
+  height: 100%;
 }
 
 .user-nav__list {
   display: flex;
   flex-wrap: nowrap;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 .user-nav__item {
   width: 60px;
+  height: 100%;
 }
 
 .user-nav__button {
   border: none;
-  width: 100%;
-  height: 100%;
+  width: 60px;
+  height: 60px;
   background-color: inherit;
+  padding: 0;
 }
 
 .user-nav__burger-button {
-  background-position: center 3px;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .user-nav__burger-button--close {
