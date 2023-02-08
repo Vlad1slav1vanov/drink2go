@@ -1,0 +1,70 @@
+.slider-item {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-item__picture-wrapper {
+  margin: 0 auto;
+  width: 280px;
+  margin-bottom: 10px;
+}
+
+.slider-item__new {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $base-primary;
+  margin-bottom: 4px;
+}
+
+.slider-item__title {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.slider-item__description {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.slider-item__price-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.slider-item__prev-price {
+  color: $base-primary;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.slider-item__current-price {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+.slider-item__button {
+  background-color: $base-primary;
+  font-size: 16px;
+  line-height: 24px;
+  color: $base-white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 20px;
+  margin-left: 20px;
+}
+
+.slider-item--flat-white {
+  background-color: $flat-white;
+}
