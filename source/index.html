@@ -74,7 +74,7 @@
                 <img class="slider-item__picture" width="280" height="280" src="img/flat-white.png" srcset="img/flat-white@2x.jpg 2x" alt="Декаф флэт уайт.">
               </picture>
             </div>
-            <span class="slider-item__new">Новинка</span>
+            <span class="slider-item__new section-subtitle">Новинка</span>
             <h2 class="slider-item__title">Декаф Флэт Уайт</h2>
             <p class="slider-item__description">
               Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком 
@@ -89,8 +89,8 @@
         </ul>
       </section>
       <section class="advantages">
-        <h3 class="advantages__subtitle">Преимущества</h3>
-        <h2 class="advantages__title">Главные причины выбрать Drink2Go</h2>
+        <h3 class="advantages__subtitle section-subtitle">Преимущества</h3>
+        <h2 class="advantages__title section-title">Главные причины выбрать Drink2Go</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantage">
             <svg class="advantage__icon" width="50" height="56" viewBox="0 0 50 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -144,8 +144,33 @@
           </li>
         </ul>
       </section>
-      <section>
-        
+      <section class="catalog">
+        <h3 class="catalog__subtitle section-subtitle">Каталог</h3>
+        <h2 class="catalog__title section-title">Каталог кофейных напитков</h2>
+        <form class="catalog__filters filters">
+          <fieldset class="filters__price">
+            <h4 class="filters__title">Цена</h4>
+            <div class="filters__range-wrapper">
+              <div class="filters__range-left filters__dot"></div>
+              <div class="filters__range-right filters__dot"></div>
+              <div class="filters__range-stick-bot"></div>
+              <div class="filters__range-stick"></div>
+            </div>
+            <div class="filters__price-container">
+              <div class="filters__price-input-wrapper">
+                <label class="filters__price-label">
+                  <input class="filters__price-input" id="low-price" type="number" value="0" />
+                </label>
+              </div>
+              <div class="filters__stick"></div>
+              <div class="filters__price-input-wrapper">
+                <label class="filters__price-label">
+                  <input class="filters__price-input" id="high-price" type="number" value="900" />
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </form>
       </section>
     </main>
     <footer class="footer"></footer>
