@@ -1,0 +1,21 @@
+.advantage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 66px;
+  background-position: 0 center;
+}
+
+.advantage__icon {
+  margin-bottom: 10px;
+}
+
+.advantage__title {
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 4px;
+}
+
+.advantage__description {
+  text-align: center;
+}
