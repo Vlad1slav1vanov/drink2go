@@ -207,33 +207,63 @@
             <h4 class="filters__title">Страна произрастания</h4>
             <ul class="filters__country-list">
               <li class="filters__country-item">
-                <input class="filters__country-checkbox visually-hidden" type="checkbox" name="country" value="Brazil" checked />
-                <span class="filters__checkbox-button"></span>
-                <span class="filters__checkbox-legend">Бразилия</span>
+                <label class="filters__checkbox-label">
+                  <input class="filters__country-checkbox visually-hidden" type="checkbox" name="country" value="Brazil" checked />
+                  <span class="filters__checkbox-button"></span>
+                  <span class="filters__checkbox-legend">Бразилия</span>
+                </label>
               </li>
               <li class="filters__country-item">
-                <input class="filters__country-checkbox visually-hidden" type="checkbox" name="country" value="Ephiopia" />
-                <span class="filters__checkbox-button"></span>
-                <span class="filters__checkbox-legend">Эфиопия</span>
+                <label class="filters__checkbox-label">
+                  <input class="filters__country-checkbox visually-hidden" type="checkbox" name="country" value="Ephiopia"/>
+                  <span class="filters__checkbox-button"></span>
+                  <span class="filters__checkbox-legend">Эфиопия</span>
+                </label>
               </li>
               <li class="filters__country-item">
-                <input class="filters__country-checkbox visually-hidden" type="checkbox" name="country" value="Columbia" />
-                <span class="filters__checkbox-button"></span>
-                <span class="filters__checkbox-legend">Колумбия</span>
+                <label class="filters__checkbox-label">
+                  <input class="filters__country-checkbox visually-hidden" type="checkbox" name="country" value="Columbia" />
+                  <span class="filters__checkbox-button"></span>
+                  <span class="filters__checkbox-legend">Колумбия</span>
+                </label>
               </li>
               <li class="filters__country-item">
-                <input class="filters__country-checkbox visually-hidden" type="checkbox" name="country" value="Costa-Rika" />
-                <span class="filters__checkbox-button"></span>
-                <span class="filters__checkbox-legend">Коста-Рика</span>
+                <label class="filters__checkbox-label">
+                  <input class="filters__country-checkbox visually-hidden" type="checkbox" name="country" value="Costa-Rika" />
+                  <span class="filters__checkbox-button"></span>
+                  <span class="filters__checkbox-legend">Коста-Рика</span>
+                </label>
               </li>
               <li class="filters__country-item">
-                <input class="filters__country-checkbox visually-hidden" type="checkbox" name="country" value="Peru" />
-                <span class="filters__checkbox-button"></span>
-                <span class="filters__checkbox-legend">Перу</span>
+                <label class="filters__checkbox-label">
+                  <input class="filters__country-checkbox visually-hidden" type="checkbox" name="country" value="Peru" disabled />
+                  <span class="filters__checkbox-button"></span>
+                  <span class="filters__checkbox-legend">Перу</span>
+                </label>
               </li>
             </ul>
           </fieldset>
+          <button class="filters__button-apply" type="submit">
+            Применить фильтр
+          </button>
+          <button class="filters__button-refresh" type="reset">
+            Сбросить фильтр
+          </button>
         </form>
+        <div class="sort">
+          <span class="sort__description">Сортировка:</span>
+          <div class="sort__select-wrapper">
+            <svg class="sort__select-arrow" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.19153L1.23899 3L5 6.61694L8.76101 3L10 4.19153L5 9L0 4.19153Z" fill="#7859CF"/>
+              </svg>
+            <select class="sort__select">
+              <option value="default">по умолчанию</option>
+              <option value="expensive">сначала дорогие</option>
+              <option value="cheap">сначала дешевые</option>
+              <option value="high-rating">высокий рейтинг</option>
+            </select>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="footer"></footer>
