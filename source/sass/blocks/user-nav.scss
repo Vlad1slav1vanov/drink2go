@@ -14,7 +14,10 @@
 
 .user-nav__item {
   width: 60px;
-  height: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .user-nav__button {
@@ -26,14 +29,16 @@
 }
 
 .user-nav__burger-button {
+  width: 16px;
+  height: 16px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .user-nav__burger-button--close {
-  background-image: url("../../img/icons/menu.svg");
+  background-image: url("../../img/icons/stack.svg#menu");
 }
 
 .user-nav__burger-button--open {
-  background-image: url('../../img/icons/menu-close.svg');
+  background-image: url('../../img/icons/stack.svg#menu-close');
 }

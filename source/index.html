@@ -175,31 +175,61 @@
             <ul class="filters__milk-radio-list">
               <li class="filters__milk-radio-item">
                 <label class="filters__radio-label">
-                  <input class="filters__radio-input" type="radio" name="type-of-milk" value="not-matter" checked/>
+                  <input class="visually-hidden filters__radio-input" type="radio" name="type-of-milk" value="not-matter" checked/>
                   <span class="filters__radio-button"></span>
                   <span class="filters__radio-legend">Не важно</span>
                 </label>
               </li>
               <li class="filters__milk-radio-item">
                 <label class="filters__radio-label">
-                  <input class="filters__radio-input" type="radio" name="type-of-milk" value="only-animal"/>
+                  <input class="visually-hidden filters__radio-input" type="radio" name="type-of-milk" value="only-animal"/>
                   <span class="filters__radio-button"></span>
                   <span class="filters__radio-legend">Только животное</span>
                 </label>
               </li>
               <li class="filters__milk-radio-item">
                 <label class="filters__radio-label">
-                  <input class="filters__radio-input" type="radio" name="type-of-milk" value="only-beyond"/>
+                  <input class="visually-hidden filters__radio-input" type="radio" name="type-of-milk" value="only-beyond"/>
                   <span class="filters__radio-button"></span>
                   <span class="filters__radio-legend">Только растительное</span>
                 </label>
               </li>
               <li class="filters__milk-radio-item">
                 <label class="filters__radio-label">
-                  <input class="filters__radio-input" type="radio" name="type-of-milk" value="no-milk" disabled/>
+                  <input class="visually-hidden filters__radio-input" type="radio" name="type-of-milk" value="no-milk" disabled/>
                   <span class="filters__radio-button"></span>
                   <span class="filters__radio-legend">Без молока</span>
                 </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filters__country">
+            <h4 class="filters__title">Страна произрастания</h4>
+            <ul class="filters__country-list">
+              <li class="filters__country-item">
+                <input class="filters__country-checkbox visually-hidden" type="checkbox" name="country" value="Brazil" checked />
+                <span class="filters__checkbox-button"></span>
+                <span class="filters__checkbox-legend">Бразилия</span>
+              </li>
+              <li class="filters__country-item">
+                <input class="filters__country-checkbox visually-hidden" type="checkbox" name="country" value="Ephiopia" />
+                <span class="filters__checkbox-button"></span>
+                <span class="filters__checkbox-legend">Эфиопия</span>
+              </li>
+              <li class="filters__country-item">
+                <input class="filters__country-checkbox visually-hidden" type="checkbox" name="country" value="Columbia" />
+                <span class="filters__checkbox-button"></span>
+                <span class="filters__checkbox-legend">Колумбия</span>
+              </li>
+              <li class="filters__country-item">
+                <input class="filters__country-checkbox visually-hidden" type="checkbox" name="country" value="Costa-Rika" />
+                <span class="filters__checkbox-button"></span>
+                <span class="filters__checkbox-legend">Коста-Рика</span>
+              </li>
+              <li class="filters__country-item">
+                <input class="filters__country-checkbox visually-hidden" type="checkbox" name="country" value="Peru" />
+                <span class="filters__checkbox-button"></span>
+                <span class="filters__checkbox-legend">Перу</span>
               </li>
             </ul>
           </fieldset>
