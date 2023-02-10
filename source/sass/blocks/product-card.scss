@@ -1,0 +1,42 @@
+.product-card__picture {
+  margin-bottom: 24px;
+}
+
+.product-card__title {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.product-card__description {
+  white-space: pre;
+  margin-bottom: 16px;
+}
+
+.product-card__price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.product-card__price {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.product-card__button {
+  width: 141px;
+  background-color: $base-primary;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $base-white;
+  border-radius: 4px;
+  background-image: url('../../img/icons/stack.svg#basket');
+  background-size: 20px 16px;
+  background-repeat: no-repeat;
+  background-position: 20px 10px;
+  padding: 8px 20px 8px 46px;
+}
