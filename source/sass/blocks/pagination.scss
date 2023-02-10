@@ -1,0 +1,32 @@
+.pagination {
+  width: 280px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.pagination__button {
+  width: 40px;
+  height: 40px;
+  background-color: $base-white;
+  border-radius: 4px;
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: $base-primary;
+}
+
+.pagination__button--selected {
+  background-color: $lightest-grey;
+  color: $base-black;
+}
+
+.pagination__button--back {
+  background-image: url('../../img/icons/stack.svg#arrow-back');
+}
+
+.pagination__button--next {
+  background-image: url('../../img/icons/stack.svg#arrow-next');
+}
