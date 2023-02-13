@@ -1,0 +1,20 @@
+.academy-section {
+  padding: 20px 57px 30px 57px;
+}
+
+.academy-section__link {
+  width: 190px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 16px;
+  color: $base-grey;
+
+  & > span {
+
+  }
+}

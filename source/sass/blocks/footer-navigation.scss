@@ -1,0 +1,30 @@
+.footer-navigation {
+  padding: 20px;
+  border-bottom: 1px solid $base-secondary;
+}
+
+.footer-navigation__title {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $base-primary;
+  margin-bottom: 12px;
+}
+
+.footer-navigation__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.footer-navigation__link {
+  display: block;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: $base-black;
+  text-transform: uppercase;
+  padding: 8px 0;
+}

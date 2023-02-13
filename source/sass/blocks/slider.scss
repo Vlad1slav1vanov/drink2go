@@ -1,5 +1,6 @@
 .slider {
   width: 100%;
+  position: relative;
 }
 
 .slider__list {
@@ -9,3 +10,21 @@
 .slider__item {
   width: 100%;
 }
+
+.slider__button-back, .slider__button-next {
+  position: absolute;
+  height: 100%;
+  width: 20px;
+  background-color: inherit;
+}
+
+.slider__button-back {
+  top: 0;
+  left: 0;
+}
+
+.slider__button-next {
+  top: 0;
+  right: 0;
+}
+
