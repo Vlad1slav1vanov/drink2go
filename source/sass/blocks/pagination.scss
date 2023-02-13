@@ -16,17 +16,60 @@
   background-repeat: no-repeat;
   background-position: center;
   color: $base-primary;
+
+  &:hover {
+    background-color: $primary-lighter;
+    color: $base-white;
+
+    & > svg path {
+      fill: $base-white;
+    }
+  }
+
+  &:focus {
+    background-color: $primary-lighter;
+    color: $base-white;
+
+    & > svg path {
+      fill: $base-white;
+    }
+  }
+
+  &:active {
+    background-color: $primary-darker;
+    color: $base-white;
+
+    & > svg path {
+      fill: $base-white;
+    }
+  }
+
+  &:disabled {
+    background-color: $base-grey;
+    color: $base-white;
+
+    & > svg path {
+      fill: $base-white;
+    }
+  }
 }
 
 .pagination__button--selected {
   background-color: $lightest-grey;
   color: $base-black;
-}
 
-.pagination__button--back {
-  background-image: url('../../img/icons/stack.svg#arrow-back');
-}
+  &:hover {
+    background-color: $lightest-grey;
+    color: $base-black;
+  }
 
-.pagination__button--next {
-  background-image: url('../../img/icons/stack.svg#arrow-next');
+  &:active {
+    background-color: $lightest-grey;
+    color: $base-black;
+  }
+
+  &:focus {
+    background-color: $lightest-grey;
+    color: $base-black;
+  }
 }

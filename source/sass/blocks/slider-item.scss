@@ -57,6 +57,22 @@
   border-radius: 4px;
   padding: 8px 20px;
   margin-left: 20px;
+
+  &:hover {
+    background-color: $primary-lighter;
+  }
+
+  &:focus {
+    background-color: $primary-lighter;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+  }
+
+  &:disabled {
+    background-color: $base-grey;
+  }
 }
 
 .slider-item--flat-white {

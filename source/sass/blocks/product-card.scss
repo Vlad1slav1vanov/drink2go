@@ -39,4 +39,20 @@
   background-repeat: no-repeat;
   background-position: 20px 10px;
   padding: 8px 20px 8px 46px;
+
+  &:hover {
+    background-color: $primary-lighter;
+  }
+
+  &:focus {
+    background-color: $primary-lighter;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+  }
+
+  &:disabled {
+    background-color: $base-grey;
+  }
 }

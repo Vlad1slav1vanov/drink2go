@@ -267,6 +267,22 @@
   font-size: 13px;
   line-height: 24px;
   padding: 10.6px 14.5px;
+
+  &:hover {
+    background-color: $primary-lighter;
+  }
+
+  &:focus {
+    background-color: $primary-lighter;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+  }
+
+  &:disabled {
+    background-color: $base-grey;
+  }
 }
 
 .filters__button-refresh {
@@ -277,4 +293,24 @@
   font-size: 13px;
   line-height: 24px;
   padding: 10.6px 14.5px;
+
+  &:hover {
+    background-color: $primary-lighter;
+    color: $base-white;
+  }
+
+  &:focus {
+    background-color: $primary-lighter;
+    color: $base-white;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+    color: $base-white;
+  }
+
+  &:disabled {
+    background-color: $light-grey;
+    color: $base-white;
+  }
 }

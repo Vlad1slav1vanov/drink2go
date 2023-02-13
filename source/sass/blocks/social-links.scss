@@ -23,4 +23,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover {
+    background-color: $base-secondary;
+    & > svg path {
+      fill: $base-primary;
+    }
+  }
+
+  &:focus {
+    background-color: $base-secondary;
+    & > svg path {
+      fill: $base-primary;
+    }
+  }
+
+  &:active {
+    background-color: $primary-opacity;
+    & > svg path {
+      fill: $base-primary;
+    }
+  }
 }
