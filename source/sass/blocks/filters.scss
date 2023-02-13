@@ -3,8 +3,37 @@
   flex-direction: column;
   width: 100%;
   align-items: center;
-  gap: 24.5px;
   padding-bottom: 40px;
+  gap: 35px;
+}
+
+.filters__fieldsets-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 24.5px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.filters__buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24.5px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 30px;
+  }
 }
 
 .filters__price {
@@ -13,6 +42,10 @@
   align-items: center;
   border: none;
   width: 100%;
+
+  @media (min-width: 768px) {
+    width: 227px;
+  }
 }
 
 .filters__title {
@@ -21,6 +54,10 @@
   font-weight: 600;
   align-self: flex-start;
   margin-bottom: 22px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+  }
 }
 
 .filters__range-wrapper {
@@ -29,6 +66,12 @@
   margin: 0 auto;
   margin-bottom: 25px;
   position: relative;
+
+  @media (min-width: 768px) {
+    padding-left: 7px;
+    margin-bottom: 22px;
+    width: 220px;
+  }
 }
 
 .filters__dot {
@@ -48,6 +91,11 @@
   width: 280px;
   height: 2px;
   background-color: $light-grey;
+
+  @media (min-width: 768px) {
+    width: 213px;
+    left: 7px;
+  }
 }
 
 .filters__range-stick {
@@ -58,10 +106,19 @@
   top: 9px;
   left: 0;
   background-color: $base-primary;
+
+  @media (min-width: 768px) {
+    width: 190px;
+    left: 7px;
+  }
 }
 
 .filters__range-right {
   left: 212px;
+
+  @media (min-width: 768px) {
+    left: 182px;
+  }
 }
 
 .filters__price-container {
@@ -70,6 +127,11 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+
+  @media (min-width: 768px) {
+    width: 220px;
+    padding-left: 7px;
+  }
 }
 
 .filters__price-input {
@@ -90,6 +152,10 @@
   &:focus {
     border-color: $primary-darker;
     outline: none;
+  }
+
+  @media (min-width: 768px) {
+    width: 90px;
   }
 }
 
@@ -114,6 +180,10 @@
   align-items: flex-start;
   gap: 23px;
   justify-content: space-between;
+
+  @media (min-width: 768px) {
+    gap: 20px;
+  }
 }
 
 .filters__radio-button {
@@ -190,7 +260,6 @@
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  margin-bottom: 35.5px;
 }
 
 .filters__country-list {
@@ -198,6 +267,10 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 22px;
+
+  @media (min-width: 768px) {
+    gap: 20px;
+  }
 }
 
 .filters__checkbox-label {

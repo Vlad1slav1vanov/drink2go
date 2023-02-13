@@ -214,103 +214,107 @@
         <h3 class="catalog__subtitle section-subtitle">Каталог</h3>
         <h2 class="catalog__title section-title">Каталог кофейных напитков</h2>
         <form class="catalog__filters filters">
-          <fieldset class="filters__price">
-            <h4 class="filters__title">Цена</h4>
-            <div class="filters__range-wrapper">
-              <div class="filters__range-left filters__dot"></div>
-              <div class="filters__range-right filters__dot"></div>
-              <div class="filters__range-stick-bot"></div>
-              <div class="filters__range-stick"></div>
-            </div>
-            <div class="filters__price-container">
-              <label class="filters__price-label">
-                <input class="filters__price-input" id="low-price" type="number" value="0" />
-              </label>
-            <div class="filters__stick"></div>
-              <label class="filters__price-label">
-                <input class="filters__price-input" id="high-price" type="number" value="900" />
-              </label>
-            </div>
-          </fieldset>
-          <fieldset class="filters__milk">
-            <h4 class="filters__title">Наличие молока</h4>
-            <ul class="filters__milk-radio-list">
-              <li class="filters__milk-radio-item">
-                <label class="filters__radio-label">
-                  <input class="visually-hidden filters__radio-input" type="radio" name="type-of-milk" value="not-matter" checked/>
-                  <span class="filters__radio-button"></span>
-                  <span class="filters__radio-legend">Не важно</span>
+          <div class="filters__fieldsets-wrapper">
+            <fieldset class="filters__price">
+              <h4 class="filters__title">Цена</h4>
+              <div class="filters__range-wrapper">
+                <div class="filters__range-left filters__dot"></div>
+                <div class="filters__range-right filters__dot"></div>
+                <div class="filters__range-stick-bot"></div>
+                <div class="filters__range-stick"></div>
+              </div>
+              <div class="filters__price-container">
+                <label class="filters__price-label">
+                  <input class="filters__price-input" id="low-price" type="number" value="0" />
                 </label>
-              </li>
-              <li class="filters__milk-radio-item">
-                <label class="filters__radio-label">
-                  <input class="visually-hidden filters__radio-input" type="radio" name="type-of-milk" value="only-animal"/>
-                  <span class="filters__radio-button"></span>
-                  <span class="filters__radio-legend">Только животное</span>
+              <div class="filters__stick"></div>
+                <label class="filters__price-label">
+                  <input class="filters__price-input" id="high-price" type="number" value="900" />
                 </label>
-              </li>
-              <li class="filters__milk-radio-item">
-                <label class="filters__radio-label">
-                  <input class="visually-hidden filters__radio-input" type="radio" name="type-of-milk" value="only-beyond"/>
-                  <span class="filters__radio-button"></span>
-                  <span class="filters__radio-legend">Только растительное</span>
-                </label>
-              </li>
-              <li class="filters__milk-radio-item">
-                <label class="filters__radio-label">
-                  <input class="visually-hidden filters__radio-input" type="radio" name="type-of-milk" value="no-milk" disabled/>
-                  <span class="filters__radio-button"></span>
-                  <span class="filters__radio-legend">Без молока</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="filters__country">
-            <h4 class="filters__title">Страна произрастания</h4>
-            <ul class="filters__country-list">
-              <li class="filters__country-item">
-                <label class="filters__checkbox-label">
-                  <input class="filters__country-checkbox visually-hidden" type="checkbox" name="country" value="Brazil" checked />
-                  <span class="filters__checkbox-button"></span>
-                  <span class="filters__checkbox-legend">Бразилия</span>
-                </label>
-              </li>
-              <li class="filters__country-item">
-                <label class="filters__checkbox-label">
-                  <input class="filters__country-checkbox visually-hidden" type="checkbox" name="country" value="Ephiopia"/>
-                  <span class="filters__checkbox-button"></span>
-                  <span class="filters__checkbox-legend">Эфиопия</span>
-                </label>
-              </li>
-              <li class="filters__country-item">
-                <label class="filters__checkbox-label">
-                  <input class="filters__country-checkbox visually-hidden" type="checkbox" name="country" value="Columbia" />
-                  <span class="filters__checkbox-button"></span>
-                  <span class="filters__checkbox-legend">Колумбия</span>
-                </label>
-              </li>
-              <li class="filters__country-item">
-                <label class="filters__checkbox-label">
-                  <input class="filters__country-checkbox visually-hidden" type="checkbox" name="country" value="Costa-Rika" />
-                  <span class="filters__checkbox-button"></span>
-                  <span class="filters__checkbox-legend">Коста-Рика</span>
-                </label>
-              </li>
-              <li class="filters__country-item">
-                <label class="filters__checkbox-label">
-                  <input class="filters__country-checkbox visually-hidden" type="checkbox" name="country" value="Peru" disabled />
-                  <span class="filters__checkbox-button"></span>
-                  <span class="filters__checkbox-legend">Перу</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="filters__button-apply" type="submit">
-            Применить фильтр
-          </button>
-          <button class="filters__button-refresh" type="reset">
-            Сбросить фильтр
-          </button>
+              </div>
+            </fieldset>
+            <fieldset class="filters__milk">
+              <h4 class="filters__title">Наличие молока</h4>
+              <ul class="filters__milk-radio-list">
+                <li class="filters__milk-radio-item">
+                  <label class="filters__radio-label">
+                    <input class="visually-hidden filters__radio-input" type="radio" name="type-of-milk" value="not-matter" checked/>
+                    <span class="filters__radio-button"></span>
+                    <span class="filters__radio-legend">Не важно</span>
+                  </label>
+                </li>
+                <li class="filters__milk-radio-item">
+                  <label class="filters__radio-label">
+                    <input class="visually-hidden filters__radio-input" type="radio" name="type-of-milk" value="only-animal"/>
+                    <span class="filters__radio-button"></span>
+                    <span class="filters__radio-legend">Только животное</span>
+                  </label>
+                </li>
+                <li class="filters__milk-radio-item">
+                  <label class="filters__radio-label">
+                    <input class="visually-hidden filters__radio-input" type="radio" name="type-of-milk" value="only-beyond"/>
+                    <span class="filters__radio-button"></span>
+                    <span class="filters__radio-legend">Только растительное</span>
+                  </label>
+                </li>
+                <li class="filters__milk-radio-item">
+                  <label class="filters__radio-label">
+                    <input class="visually-hidden filters__radio-input" type="radio" name="type-of-milk" value="no-milk" disabled/>
+                    <span class="filters__radio-button"></span>
+                    <span class="filters__radio-legend">Без молока</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filters__country">
+              <h4 class="filters__title">Страна произрастания</h4>
+              <ul class="filters__country-list">
+                <li class="filters__country-item">
+                  <label class="filters__checkbox-label">
+                    <input class="filters__country-checkbox visually-hidden" type="checkbox" name="country" value="Brazil" checked />
+                    <span class="filters__checkbox-button"></span>
+                    <span class="filters__checkbox-legend">Бразилия</span>
+                  </label>
+                </li>
+                <li class="filters__country-item">
+                  <label class="filters__checkbox-label">
+                    <input class="filters__country-checkbox visually-hidden" type="checkbox" name="country" value="Ephiopia"/>
+                    <span class="filters__checkbox-button"></span>
+                    <span class="filters__checkbox-legend">Эфиопия</span>
+                  </label>
+                </li>
+                <li class="filters__country-item">
+                  <label class="filters__checkbox-label">
+                    <input class="filters__country-checkbox visually-hidden" type="checkbox" name="country" value="Columbia" />
+                    <span class="filters__checkbox-button"></span>
+                    <span class="filters__checkbox-legend">Колумбия</span>
+                  </label>
+                </li>
+                <li class="filters__country-item">
+                  <label class="filters__checkbox-label">
+                    <input class="filters__country-checkbox visually-hidden" type="checkbox" name="country" value="Costa-Rika" />
+                    <span class="filters__checkbox-button"></span>
+                    <span class="filters__checkbox-legend">Коста-Рика</span>
+                  </label>
+                </li>
+                <li class="filters__country-item">
+                  <label class="filters__checkbox-label">
+                    <input class="filters__country-checkbox visually-hidden" type="checkbox" name="country" value="Peru" disabled />
+                    <span class="filters__checkbox-button"></span>
+                    <span class="filters__checkbox-legend">Перу</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="filters__buttons-wrapper">
+            <button class="filters__button-apply" type="submit">
+              Применить фильтр
+            </button>
+            <button class="filters__button-refresh" type="reset">
+              Сбросить фильтр
+            </button>
+          </div>
         </form>
         <div class="catalog__sort sort">
           <span class="sort__description">Сортировка:</span>
