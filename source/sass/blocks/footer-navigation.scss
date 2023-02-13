@@ -27,4 +27,16 @@
   color: $base-black;
   text-transform: uppercase;
   padding: 8px 0;
+
+  &:hover {
+    color: $primary-lighter;
+  }
+
+  &:focus {
+    color: $primary-lighter;
+  }
+
+  &:active {
+    color: $primary-darker;
+  }
 }

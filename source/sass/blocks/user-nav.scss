@@ -26,13 +26,16 @@
   height: 60px;
   background-color: inherit;
   padding: 0;
+
+  &:active {
+    background-color: $base-secondary;
+  }
 }
 
 .user-nav__burger-button {
-  width: 16px;
-  height: 16px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 16px;
 }
 
 .user-nav__burger-button--close {

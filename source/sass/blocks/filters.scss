@@ -72,31 +72,23 @@
   width: 100%;
 }
 
-.filters__price-input-wrapper  {
+.filters__price-input {
   width: 118px;
   border-radius: 4px;
   border: 2px solid $base-primary;
   padding: 7px;
-}
-
-.filters__price-label {
-  width: 100%;
-  height: 100%;
-}
-
-.filters__price-input {
-  width: 80px;
-  border: none;
   background-color: inherit;
-  width: 100%;
-  height: 100%;
   text-align: center;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
 
+  :root {
+    --swiper-theme-color: none;
+  }
+
   &:focus {
-    border: none;
+    border-color: $primary-darker;
     outline: none;
   }
 }
