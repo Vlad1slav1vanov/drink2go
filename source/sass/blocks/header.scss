@@ -8,9 +8,49 @@
 
 .header__logo-link {
   display: flex;
-  width: 60px;
-  height: 60px;
   margin-left: 6px;
   align-items: center;
   justify-content: center;
+}
+
+.header__logo-icon {
+  &--mobile {
+    display: block;
+  }
+  
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
 }
