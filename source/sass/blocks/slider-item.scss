@@ -1,12 +1,13 @@
 .slider-item {
   width: 100%;
   padding: 20px;
+  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.slider-item__picture-wrapper {
+.slider-item__picture {
   margin: 0 auto;
   width: 280px;
   margin-bottom: 10px;
@@ -37,6 +38,7 @@
   color: $base-primary;
   font-size: 16px;
   line-height: 32px;
+  text-decoration: line-through;
 }
 
 .slider-item__current-price {
@@ -59,4 +61,12 @@
 
 .slider-item--flat-white {
   background-color: $flat-white;
+}
+
+.slider-item--lavender {
+  background-color: $lavender-latte;
+}
+
+.slider-item--espresso {
+  background-color: $espresso;
 }

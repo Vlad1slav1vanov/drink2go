@@ -1,4 +1,3 @@
-/* в этот файл добавляет скрипты*/
 const burgerButton = document.querySelector('.user-nav__burger-button');
 const mainNav = document.querySelector('.main-nav');
 

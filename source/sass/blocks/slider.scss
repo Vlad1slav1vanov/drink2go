@@ -11,20 +11,35 @@
   width: 100%;
 }
 
-.slider__button-back, .slider__button-next {
+.slider__button {
   position: absolute;
   height: 100%;
   width: 20px;
   background-color: inherit;
 }
 
-.slider__button-back {
-  top: 0;
+.swiper-button-prev {
+  top: 22px;
   left: 0;
+
+  &::after {
+    display: none;
+  }
+
+  &:active {
+    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
 }
 
-.slider__button-next {
-  top: 0;
+.swiper-button-next {
+  top: 22px;
   right: 0;
-}
 
+  &::after {
+    display: none;
+  }
+
+  &:active {
+    background: linear-gradient(270deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+}

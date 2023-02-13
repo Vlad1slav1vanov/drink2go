@@ -20,4 +20,5 @@ const mainPin = L.marker(
     icon: mainPinIcon,
   },
 );
+
 mainPin.addTo(map);
