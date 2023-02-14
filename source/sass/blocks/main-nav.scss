@@ -22,10 +22,14 @@
     display: flex;
     margin-right: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 162px;
+    width: max-content;
+  }
 }
 
 .main-nav__list {
-  width: 100%;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -33,6 +37,10 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
   }
 }
 
@@ -48,6 +56,10 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: max-content;
   }
 }
 
@@ -76,5 +88,10 @@
       }
     }
     padding: 32px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: max-content;
+    margin-right: 0;
   }
 }

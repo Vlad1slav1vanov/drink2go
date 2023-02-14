@@ -8,6 +8,23 @@
   @media (min-width: 768px) {
     padding: 0 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+  }
+}
+
+.header__main-title {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-right: 162px;
+    width: 126px;
+  }
 }
 
 .header__logo-link {
@@ -18,6 +35,10 @@
 
   @media (min-width: 768px) {
     margin-right: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
   }
 }
 

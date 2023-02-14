@@ -26,12 +26,27 @@
       z-index: 1;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 180px 80px 242px 735px;
+    align-items: flex-start;
+
+    &::before {
+      content: none;
+    }
+  }
 }
 
 .slider-item__picture {
   display:inline-flex;
   margin: 0 auto;
   margin-bottom: 10px;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 105px;
+    top: 30px;
+  }
 }
 
 .slider-item__title {
@@ -56,6 +71,11 @@
     font-size: 20px;
     line-height: 32px;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-bottom: 40px;
+  }
 }
 
 .slider-item__price-wrapper {
@@ -68,6 +88,10 @@
     margin-bottom: 20px;
   }
 
+  @media (min-width: $desktop-width) {
+    align-self: flex-start;
+    margin-bottom: 0;
+  }
 }
 
 .slider-item__prev-price {
