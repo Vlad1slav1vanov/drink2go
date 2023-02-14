@@ -8,6 +8,10 @@
     width: 222px;
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 318px;
+  }
 }
 
 .media-links__title {

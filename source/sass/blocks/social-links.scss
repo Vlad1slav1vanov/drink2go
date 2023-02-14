@@ -8,10 +8,30 @@
   padding: 22px 20px;
   margin: 0;
   border-bottom: 1px solid $base-secondary;
+  position: relative;
 
   @media (min-width: 768px) {
     padding: 42px 0px 32px 0px;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 317px;
+    padding: 0;
+    align-items: flex-start;
+    gap: 80px;
+
+    &::after {
+      content: 'Интернет-магазин кофейных напитков';
+      position: absolute;
+      left: 0;
+      top: 46px;
+      font-size: 14px;
+      line-height: 20px;
+      width: 100%;
+    }
   }
 }
 

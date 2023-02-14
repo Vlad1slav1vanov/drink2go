@@ -8,6 +8,10 @@
   @media (min-width: 768px) {
     padding: 60px 30px 100px 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 40px 120px 40px;
+  }
 }
 
 .advantages__subtitle {
@@ -29,6 +33,10 @@
   @media (min-width: 768px) {
     margin-bottom: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+  }
 }
 
 .advantages__list {
@@ -42,5 +50,11 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
     row-gap: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
   }
 }

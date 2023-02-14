@@ -2,14 +2,38 @@
   @media (min-width: 768px) {
     padding: 0 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    display: flex;
+    padding: 40px 40px 76px 40px;
+    gap: 30px;
+    justify-content: flex-start;
+  }
 }
 
 .footer__wrapper {
   @media (min-width: 768px) {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 30px;
     margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    justify-content: flex-end;
+    width: max-content;
+  }
+}
+
+.footer__academy-section {
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    position: absolute;
+    top: 241px;
+    left: 617px;
   }
 }
 

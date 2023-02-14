@@ -5,6 +5,10 @@
   align-items: center;
   padding-bottom: 40px;
   gap: 35px;
+
+  @media (min-width: $desktop-width) {
+    width: 318px;
+  }
 }
 
 .filters__fieldsets-wrapper {
@@ -20,6 +24,11 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    gap: 30px;
   }
 }
 
@@ -45,6 +54,10 @@
 
   @media (min-width: 768px) {
     width: 227px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
@@ -72,6 +85,11 @@
     margin-bottom: 22px;
     width: 220px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 318px;
+    padding: 0;
+  }
 }
 
 .filters__dot {
@@ -96,6 +114,11 @@
     width: 213px;
     left: 7px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 318px;
+    left: 0;
+  }
 }
 
 .filters__range-stick {
@@ -111,6 +134,11 @@
     width: 190px;
     left: 7px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 274px;
+    left: 0;
+  }
 }
 
 .filters__range-right {
@@ -118,6 +146,10 @@
 
   @media (min-width: 768px) {
     left: 182px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 266px;
   }
 }
 
@@ -131,6 +163,11 @@
   @media (min-width: 768px) {
     width: 220px;
     padding-left: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 318px;
+    padding: 0;
   }
 }
 
@@ -156,6 +193,10 @@
 
   @media (min-width: 768px) {
     width: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
   }
 }
 
@@ -347,6 +388,11 @@
 
   &:disabled {
     background-color: $base-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+    padding: 8px 4.5px;
   }
 }
 

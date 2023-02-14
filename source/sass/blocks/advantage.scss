@@ -9,6 +9,11 @@
     padding-left: 72px;
     align-items: flex-start;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    align-items: center;
+  }
 }
 
 .advantage__icon {
@@ -18,6 +23,11 @@
     position: absolute;
     top: 4px;
     left: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    margin-bottom: 20px;
   }
 }
 
@@ -32,6 +42,10 @@
     margin-bottom: 10px;
     text-align: left;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
 }
 
 .advantage__description {
@@ -41,5 +55,9 @@
     text-align: left;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }

@@ -9,6 +9,10 @@
   @media (min-width: 768px) {
     padding: 80px 20px 90px 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 40px 120px 40px;
+  }
 }
 
 .catalog__subtitle {
@@ -17,4 +21,26 @@
 
 .catalog__title {
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.catalog__catalog-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.catalog__product-catalog-container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
