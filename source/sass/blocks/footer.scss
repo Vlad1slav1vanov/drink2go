@@ -1,0 +1,15 @@
+.footer {
+  @media (min-width: 768px) {
+    padding: 0 20px;
+  }
+}
+
+.footer__wrapper {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+}
+

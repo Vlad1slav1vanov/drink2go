@@ -1,5 +1,9 @@
 .academy-section {
   padding: 20px 57px 30px 57px;
+
+  @media (min-width: 768px) {
+    padding: 0px 281px 40px 281px;
+  }
 }
 
 .academy-section__link {

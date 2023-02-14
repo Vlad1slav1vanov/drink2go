@@ -8,6 +8,31 @@
   padding: 22px 20px;
   margin: 0;
   border-bottom: 1px solid $base-secondary;
+
+  @media (min-width: 768px) {
+    padding: 42px 0px 32px 0px;
+    border: none;
+  }
+}
+
+.social-links__main-logo-icon {
+  &--mobile {
+    display: block;
+  }
+
+  &--tablet {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
 }
 
 .social-links__list {

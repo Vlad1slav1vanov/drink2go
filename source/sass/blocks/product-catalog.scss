@@ -1,6 +1,10 @@
 .product-catalog {
   width: 100%;
   padding-bottom: 40px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 70px;
+  }
 }
 
 .product-catalog__list {
@@ -9,6 +13,13 @@
   flex-direction: column;
   gap: 20px;
   align-items: center;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px;
+  }
 }
 
 .product-catalog__item {

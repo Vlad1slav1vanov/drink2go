@@ -1,6 +1,12 @@
 .footer-navigation {
   padding: 20px;
   border-bottom: 1px solid $base-secondary;
+
+  @media (min-width: 768px) {
+    padding: 0;
+    width: 223px;
+    border: none;
+  }
 }
 
 .footer-navigation__title {

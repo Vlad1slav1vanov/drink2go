@@ -1,5 +1,16 @@
+.product-card {
+  @media (min-width: 768px) {
+    width: 100%;
+    padding: 50px 30px 30px 30px;
+  }
+}
+
 .product-card__picture {
   margin-bottom: 24px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 30px;
+  }
 }
 
 .product-card__title {
@@ -7,11 +18,24 @@
   line-height: 32px;
   font-weight: 700;
   margin-bottom: 4px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 36px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
 }
 
 .product-card__description {
   white-space: pre;
   margin-bottom: 16px;
+
+  @media (min-width: 768px) {
+    white-space: inherit;
+    margin-bottom: 22px;
+    width: 100%;
+  }
 }
 
 .product-card__price-wrapper {

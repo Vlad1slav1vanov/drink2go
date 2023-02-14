@@ -5,6 +5,11 @@
   justify-content: space-between;
   font-size: 16px;
   line-height: 24px;
+
+  @media (min-width: 768px) {
+    width: 100%;
+    justify-content: flex-end;
+  }
 }
 
 .pagination__button {
@@ -16,6 +21,41 @@
   background-repeat: no-repeat;
   background-position: center;
   color: $base-primary;
+
+  @media (min-width: 768px) {
+    &:first-child, &:nth-last-child(2) {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    &:nth-child(2), &:last-child {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+    }
+    
+    &:first-child {
+      padding: 8px 47px;
+      width: 140px;
+      &::after {
+        content: 'Назад';
+        font-size: 14px;
+        line-height: 24px;
+        color: #7859CF;
+      }
+    }
+
+    &:last-child {
+      padding: 8px 47px;
+      width: 140px;
+      &::after {
+        content: 'Вперед';
+        font-size: 14px;
+        line-height: 24px;
+        color: #7859CF;
+      }
+    }
+
+  }
 
   &:hover {
     background-color: $primary-lighter;
@@ -71,5 +111,11 @@
   &:focus {
     background-color: $lightest-grey;
     color: $base-black;
+  }
+}
+
+.pagination__icon {
+  @media (min-width: 768px) {
+    display: none;
   }
 }
